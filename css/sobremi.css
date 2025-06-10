@@ -318,7 +318,7 @@
 
     .contacto-izq p {
         font-size: 1em;
-        text-align: left;
+        text-align: center;
     }
 
     .contacto-der {
@@ -376,26 +376,44 @@
     }
 }
 
-/* Responsive */
+/* MEDIA QUERY para pantallas de hasta 768px */
 @media (max-width: 768px) {
-    .contenedor-principal {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
+    .cartel-sup {
+      padding: 20px 20px;
+      text-align: center;
     }
-
+  
+    .contenedor-principal {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
     .imagen-izq,
     .sobremi-der {
-        width: 100%;
+      width: 100%;
+      text-align: center;
     }
-
-    .imagen-izq img {
-        height: 50vh;
-        border-radius: 20% 20% 0 0;
+  
+    .sobremi-der {
+      align-items: center;
     }
-
+  
+    .sobremi-der h1 {
+      font-size: 2rem;
+    }
+  
+    .sobremi-der p {
+      font-size: 1rem;
+    }
+  
     .boton-rosaf {
-        margin-top: 20px;
+      align-self: center;
     }
-}
-
+  
+    .imagen-izq img {
+      height: auto;
+      max-width: 100%;
+      border-radius: 30px;
+    }
+  }

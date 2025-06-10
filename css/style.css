@@ -152,6 +152,29 @@ footer {
 }
 
 
+/* MEDIA QUERY: Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-imagen,
+  .footer-contacto {
+    text-align: center;
+  }
+
+  .footer-imagen img {
+    max-width: 40%;
+  }
+
+  .footer-contacto {
+    align-items: center;
+  }
+}
+
 /* Media queries */
 @media (max-width: 768px) {
   .header-izq {
