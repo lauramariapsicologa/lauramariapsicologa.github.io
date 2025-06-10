@@ -91,12 +91,12 @@
     }
 
     .principal-izq {
-        width: 100%;
-        padding: 40px 30px;
+        width: 80%;
+        padding: 40px 40px;
     }
 
     .principal-der {
-        width: 100%;
+        width: 80%;
         justify-content: center;
         padding: 20px;
     }
