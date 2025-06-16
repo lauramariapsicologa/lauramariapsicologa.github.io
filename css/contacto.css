@@ -1,57 +1,267 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    text-align: center;
-    color: #333;
-}
-.form-group {
-    margin-bottom: 15px;
-}
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 0;
     box-sizing: border-box;
 }
-textarea {
-    height: 150px;
-    resize: vertical;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
-button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
+
+.contact-container {
+    display: flex;
+    height: 100vh;
+    max-height: 800px;
+    min-height: 600px;
 }
-button:hover {
-    background: #45a049;
+
+.contact-image {
+    flex: 0 0 50%;
+    overflow: hidden;
 }
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-content {
+    flex: 0 0 50%;
+    background: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+.contact-details h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.contact-details p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.contact-details a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.phone-number {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+
+
+.fondo-rosa {
+    background: #EFDAE8;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    padding: 40px;
+    gap: 40px;
+}
+
+.texto-izq {
+    flex: 1;
+    color: #2c2c2c;
+    padding-right: 20px;
+}
+
+.texto-izq h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #657C58;
+    font-family: "Playfair display", bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+
+.texto-izq p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #2c2c2c;
+}
+
+.imagen-der {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-hipnosis-contacto {
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 40% 40% 0 0;
+    display: block;
+}
+
+
+.title {
+    font-size: 2rem;
+    color: #A87E96;
+    font-family: "Playfair display", bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #3D3C41;
+    font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 1.2rem;
+    }
+
+    .card-content {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.7rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .fondo-rosa {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .texto-izq {
+        padding-right: 0;
+        order: 2;
+    }
+
+    .imagen-der {
+        order: 1;
+    }
+
+    .texto-izq h3 {
+        font-size: 2rem;
+    }
+
+    .texto-izq h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .img-hipnosis-contacto {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fondo-rosa {
+        padding: 20px 15px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .texto-izq h3 {
+        font-size: 1.8rem;
+    }
+
+    .texto-izq p {
+        font-size: 1rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .contact-image {
+        flex: 0 0 40vh;
+    }
+
+    .contact-content {
+        flex: 1;
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-intro {
+        font-size: 1rem;
+    }
 }
