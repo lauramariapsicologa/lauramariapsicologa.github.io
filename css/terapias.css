@@ -246,6 +246,84 @@
     z-index: 1;
     font-weight: 300;
 }
+
+.curso-transformacion {
+    background: white;
+    padding: 60px;
+    margin: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    text-align: center;
+}
+
+.curso-transformacion .container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.curso-transformacion .titulo-seccion {
+    color: #3D3C41;
+    font-family: "Playfair Display", serif;
+    font-size: 4vh;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.curso-transformacion .resumen-curso {
+    background: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.curso-transformacion .resumen-curso p {
+    color: #3D3C41;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.curso-transformacion .boton-pdf {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #657c58;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.curso-transformacion .boton-pdf:hover {
+    background: white;
+    color: #657c58;
+    border-color: #657c58;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(101, 124, 88, 0.3);
+}
+
+@media (max-width: 768px) {
+    .curso-transformacion {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+    
+    .curso-transformacion .titulo-seccion {
+        font-size: 3vh;
+    }
+}
+
 @media (max-width: 1000px) {
     .contenedor-tarjetas {
         grid-template-columns: repeat(2, 1fr);
