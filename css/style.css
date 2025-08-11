@@ -75,6 +75,31 @@ body {
   padding: 5px;
 }
 
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
 
 
 /* Estilos para el footer */
@@ -241,4 +266,5 @@ footer {
     padding: 8px 12px;
     font-size: 0.9em;
   }
+
 }
